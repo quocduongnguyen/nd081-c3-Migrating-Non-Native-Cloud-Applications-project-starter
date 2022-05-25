@@ -63,7 +63,7 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 
 | Azure Resource | Service Tier | Monthly Cost |
 | ------------ | ------------ | ------------ |
-| *Azure Postgres Database* |     |              |
+| *Azure Postgres Database* | Basic    |vCore: 47.38x1 + 5GBx0.14 = 48.07 USD|
 | *Azure Service Bus*   |         |              |
 | ...                   |         |              |
 
