@@ -6,7 +6,7 @@
       "type": "serviceBusTrigger",
       "direction": "in",
       "queueName": "notificationqueue",
-      "connection": "BusConnection",
+      "connection": "",
       "AzureWebJobsServiceBus": "Endpoint=sb://duongnq9-project3-service-bus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=IxiwX4zcN2rvJMGR74aL4xpXz0o/ODtKEO1V4pFKXw8=;"
     }
   ]
