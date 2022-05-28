@@ -191,3 +191,4 @@ ALTER TABLE ONLY public.attendee
 -- PostgreSQL database dump complete
 --
 
+UPDATE attendee SET email = 'quocduong21121993@yahoo.com'

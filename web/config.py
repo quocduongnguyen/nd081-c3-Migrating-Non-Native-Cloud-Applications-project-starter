@@ -12,10 +12,10 @@ class BaseConfig:
     SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI') or DB_URL
     CONFERENCE_ID = 1
     SECRET_KEY = 'LWd2tzlprdGHCIPHTd4tp5SBFgDszm'
-    SERVICE_BUS_CONNECTION_STRING ='' #TODO: Update value
+    SERVICE_BUS_CONNECTION_STRING ='Endpoint=sb://duongnq9-project3-service-bus.servicebus.windows.net/;SharedAccessKeyName=FullAccessKey;SharedAccessKey=X3K8mpPwBhz8zd76TpRe6Ryn98zAHrb+Ju7NjcSWHBI=;EntityPath=notificationqueue' #TODO: Update value
     SERVICE_BUS_QUEUE_NAME ='notificationqueue'
     ADMIN_EMAIL_ADDRESS: 'quocduong.th10b.mta@gmail.com'
-    SENDGRID_API_KEY = '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' #Configuration not required, required SendGrid Account
+    SENDGRID_API_KEY = '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' #Configuration not required, required SendGrid Account
 
 class DevelopmentConfig(BaseConfig):
     DEBUG = True
@@ -30,7 +30,7 @@ class DevelopmentConfig(BaseConfig):
     SERVICE_BUS_CONNECTION_STRING ='Endpoint=sb://duongnq9-project3-service-bus.servicebus.windows.net/;SharedAccessKeyName=FullAccessKey;SharedAccessKey=X3K8mpPwBhz8zd76TpRe6Ryn98zAHrb+Ju7NjcSWHBI=;EntityPath=notificationqueue' #TODO: Update value
     SERVICE_BUS_QUEUE_NAME ='notificationqueue'
     ADMIN_EMAIL_ADDRESS: 'quocduong.th10b.mta@gmail.com'
-    SENDGRID_API_KEY = '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' #Configuration not required, required SendGrid Account
+    SENDGRID_API_KEY = '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' #Configuration not required, required SendGrid Account
 
 class ProductionConfig(BaseConfig):
     DEBUG = False
