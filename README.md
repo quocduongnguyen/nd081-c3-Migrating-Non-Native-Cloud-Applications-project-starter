@@ -78,4 +78,4 @@ Azure Web App and Azure Functions have a clear mission in each part:
    - Azure Web App will take care of displaying and responding to user actions.
    - Azure Function takes care of logical operations.
 In case there are a lot of emails that need to be sent. If handling them in Azure Web App, it will take a long time to affect the following operations of the user. As for processing in Azure Function, just wait until completion and do not affect Azure Web App
-Moreover, Azure Function only runs when there is an email to send, so there will be no unnecessary costs. Using the queue used when there is a failure in Azure Function, we can easily resend/re-read messages from the queue.
+Moreover, Azure Function only runs when there is an email to send, so there will be no unnecessary costs. Using the service bus queue when there is a failure in Azure Function, we can easily resend/re-read messages from the service bus queue.
