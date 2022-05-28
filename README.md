@@ -66,7 +66,13 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 | *Azure Postgres Database* | Basic    |vCore: 24.82x1 + 5GBx0.10 = 25.32 USD|
 | *Azure Service Bus*   | Basic        | 0.05 USD             |
 | *App Service Plan*   | Free F1        | 0             |
-| ...                   |         |              |
+| ...                   |         | 0.05 USD              |
 
 ## Architecture Explanation
 This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
+
+Azure Web App and Azure Functions have a clear mission in each part:
+   - Azure Web App will take care of displaying and responding to user actions.
+   - Azure Function takes care of logical operations.
+In case there are a lot of emails that need to be sent. If handling them in Azure Web App, it will take a long time to affect the following operations of the user. As for processing in Azure Function, just wait until completion and do not affect Azure Web App
+Moreover, Azure Function only runs when there is an email to send, so there will be no unnecessary costs.
